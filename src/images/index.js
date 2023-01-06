@@ -1,0 +1,11 @@
+export { default as logo_figma } from './logo-figma.png'
+export { default as logo_framer } from './logo-framer.png'
+export { default as logo_react } from './logo-react.png'
+export { default as logo_sketch } from './logo-sketch.png'
+export { default as logo_swift } from './logo-swift.png'
+export { default as logo_studio } from './logo-studio.png'
+
+export { default as wallpaper } from './wallpaper.jpg'
+export { default as wallpaper2 } from './wallpaper2.jpg'
+export { default as wallpaper3 } from './wallpaper3.jpg'
+export { default as wallpaper4 } from './wallpaper4.jpg'
