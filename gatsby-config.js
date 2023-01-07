@@ -6,5 +6,5 @@ module.exports = {
     title: `react4des`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-netlify`],
 }
