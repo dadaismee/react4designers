@@ -1,13 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import * as images from '../images/index'
 import Card from '../components/Card'
 import Header from '../components/Header'
 import "./index.css"
 import Wave from '../components/Wave'
 import Section from '../components/Section'
+import Footer from '../components/Footer'
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  
   return (
     <div>
       <Header />
@@ -58,8 +60,30 @@ const IndexPage = () => {
         title='React for designers'
         text='Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify.'
       />
+      <Footer data={data} />
     </div>
   )
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+        description
+        keywords
+      }
+    }
+    allContentfulLink( sort: { fields: [createdAt], order: ASC }) {
+      edges {
+        node {
+          title
+          url
+          createdAt
+        }
+      }
+    }
+  }
+`
