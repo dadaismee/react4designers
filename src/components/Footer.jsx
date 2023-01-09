@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 const FooterGroup = styled.div`
   background: #F1F3F5;
@@ -49,7 +50,8 @@ const LinksGroup = styled.div`
 
 const Footer  = ({ data }) => {
   const links = data.allContentfulLink.edges.map(edge => (
-    <a href={edge.node.url}>{edge.node.title}</a>
+    // <a href={edge.node.url}>{edge.node.title}</a>
+    <Link to="/404/">{edge.node.title}</Link>
   ));
   
   return (

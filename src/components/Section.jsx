@@ -49,6 +49,7 @@ const SectionTitle = styled.h3`
 const SectionText = styled.p`
   margin: 0; 
   color: white;
+  line-height: 1.45;
 `
 
 const WaveBottom = styled.div`

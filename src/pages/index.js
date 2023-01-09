@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
         <div className="hero__group">
           <h1>Learn to <br /> design and code <br /> React apps</h1>
           <p>Complete courses about the best tools and design systems. Prototype and build apps with React and Swift.</p>
-          <Link to="/page-2/">Watch the video</Link>
+          <Link to="/404/">Watch the video</Link>
           <div className="hero__group-logos">
             <img src={images.logo_sketch} width="50" alt="figma" />
             <img src={images.logo_figma} width="50" alt="figma" />
@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="cards">
-      <h2>11 courses, more coming</h2>
+      <h2>4 courses, more coming</h2>
         <div className="cards__group">
           <Card 
             title="React for designers"
